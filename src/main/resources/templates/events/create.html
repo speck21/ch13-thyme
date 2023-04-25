@@ -5,11 +5,10 @@
 
 <header th:replace="fragments :: header"></header>
 
-<ul>
-    <th:block th:each="event : ${events}">
-        <li th:text="${event}"></li>
-    </th:block>
-</ul>
+<form method="post">
+	<input type="text" name="eventName">
+	<input type="submit" value="Create">
+</form>
 
 </body>
 </html>
